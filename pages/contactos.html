@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Pizza</title>
+    <link rel="shortcut icon" href="../multimedia/img/icons8-pizza-48.png" type="image/x-icon">
 </head>
 <body>
    <header>
@@ -14,13 +15,51 @@
         <a href="ubicaciones.html" >Nuestras Ubicaciones</a>
         <a href="menu.html" >Menu</a>
         <a href="#" >Contacto</a>
+        <a href="#infocontact">Informacion Contacto</a>
     </nav>
    </header>
    <main>
-    
+    <h2>Dejanos tu contacto</h2>
+        <form>
+            <fieldset>
+                <label>Nombres:</label>
+                    <input name="Nombre" type="text" placeholder="Tu nombre" required>
+                <br>
+                <br>
+                <label>Email:</label>
+                    <input name="Email" type="text" placeholder="Tu correo electronico" required><
+                <br>
+                <br>
+                <label>Telefono:</label>
+                    <input name="telefono" type="phone" placeholder="Tu movil" required>
+                <br>
+                <br>
+                <label>Genero:</label>
+                    <select name="selection" id=""><br>
+                        <option value="#">Elegir</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="no-binario">No binario</option>
+                    </select>
+                <br>
+                <br>
+                <label>Deja un mensaje: </label><br>
+                    <textarea name="#" cols="30" rows="10" required>Deja tu mensaje</textarea>
+                <br>
+                <button>Enviar</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
    </main>
-   <footer>
-
-   </footer>
+   <footer id="infocontact">
+    <div>
+        <h3>Informacion del contacto</h3>
+        <h2>Direccion:</h2>
+        <h2> Del Hospicio 58BIS, Zona Centro, 99300 Jerez de García Salinas, Zac.</h2>
+        <br>
+        <h2>Telefono:</h2>
+        <p> 494-123-45-67 </p>
+    </div>
+</footer>
 </body>
 </html>
