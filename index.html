@@ -1,63 +1,460 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class=""> <!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio | Pizza </title>
-    <link rel="shortcut icon" href="multimedia/img/icons8-pizza-48.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Pizza Buongiorno</h1>
-        <nav>
-            <a href=# >Inicio</a>
-            <a href="pages/nosotros.html" >¿Quienes somos?</a>
-            <a href="pages/ubicaciones.html" >Nuestras Ubicaciones</a>
-            <a href="pages/menu.html" >Menu</a>
-            <a href="pages/contactos.html" >Contacto</a>
-            <a href="#infocontact">Informacion Contacto</a>
-        </nav>
-    </header>
-    <main>
-        <div>
-            <img src="multimedia/img/pizza.png" >
-        </div>
-        <div class="box header-nav">
-            <h2><strong>Anuncio</strong></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Nihil, facilis doloribus vel quibusdam ullam nulla voluptates, 
-                sequi eaque a culpa, at quas minus iste veritatis unde debitis 
-                dignissimos tempore! Dignissimos!</p>
-            <a href="#">Learn more</a>    
-        </div>
-        <div class="box header-nav">
-            <h2><strong>Nuestras Ubicaciones</strong></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Nihil, facilis doloribus vel quibusdam ullam nulla voluptates, 
-                sequi eaque a culpa, at quas minus iste veritatis unde debitis 
-                dignissimos tempore! Dignissimos!</p>
-            <a href="#">Learn more</a>    
-        </div>
-        <div class="box header-nav">
-            <h2><strong>La mejor pizza del mundo</strong>></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Nihil, facilis doloribus vel quibusdam ullam nulla voluptates, 
-                sequi eaque a culpa, at quas minus iste veritatis unde debitis 
-                dignissimos tempore! Dignissimos!</p>
-            <a href="#">Learn more</a>    
-        </div>
-    </main>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">	
+	<title>Inicio | Pizza </title>
+    <link rel="shortcut icon" href="images/icons8-pizza-48.png" type="image/x-icon">
+		
+    <link href="libraries/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="libraries/fuelux/jquery-ui.min.css">
+    <linK href="libraries/owl-carousel/owl.carousel.css" rel="stylesheet"/> 
+    <linK href="libraries/owl-carousel/owl.theme.css" rel="stylesheet"/> 
+	<link href="libraries/fonts/font-awesome.min.css" rel="stylesheet"/>
+	<link href="libraries/animate/animate.min.css" rel="stylesheet"/>
+	<link href="libraries/flexslider/flexslider.css" rel="stylesheet" /> <!-- flexslider -->
+	<link href="libraries/magnific-popup.css" rel="stylesheet" />
+    <link href="css/components.css" rel="stylesheet"/>
+	<link href="style.css" rel="stylesheet"/>
+    <link href="css/media.css" rel="stylesheet"/>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5/html5shiv.min.js"></script>
+      <script src="js/html5/respond.min.js"></script>
+    <![endif]-->
 
-    <footer id="infocontact">
-        <div>
-            <h3>Informacion del contacto</h3>
-            <h2>Direccion:</h2>
-            <h2> Del Hospicio 58BIS, Zona Centro, 99300 Jerez de García Salinas, Zac.</h2>
-            <br>
-            <h2>Telefono:</h2>
-            <p> 494-123-45-67 </p>
-        </div>
-    </footer>
+	<link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    
+</head>
+<body data-offset="200" data-spy="scroll" data-target=".primary-navigation">
+	<a id="top"></a>
+	
+	<!-- Header Section -->
+	<header id="header-section" class="header-section">
+		
+		<!-- Logo Block -->
+		<div class="logo-block">
+			<!-- container -->
+			<div class="container">
+				<div class="row">
+					<!-- col-md-2 -->
+					<div class="col-md-3 col-sm-4">
+						<a title="Logo" href="index.html"><img src="images/Pizza2.PNG" alt="logo" /></a>
+					</div><!-- col-md-2 /- -->
+					<!-- col-md-4 -->
+				</div>
+			</div>
+		</div><!-- Logo Block /- -->
+		
+		<!-- Menu Block -->
+		<div class="menu-block">
+			<div class="container">
+				<div class="row">
+					<!-- col-md-8 -->
+					<nav class="navbar navbar-default col-md-8">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a title="Logo" href="index.html"><img alt="logo" src="images/Pizza2.png"></a>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active">
+									<a title="Home" href="#" class="toggle">Inicio</a>
+								</li>
+								<li>
+                                    <a title="About" href="pages/nosotros.html">Nosotros</a>
+                                </li>
+								<li>
+									<a  title="Services" href="pages/ubicaciones.html" class="toggle">Ubicaciones</a>
+								</li>
+								<li>
+									<a title="Portfolio" href="pages/menu.html" class="toggle">Menu</a>
+								</li>
+								<li>
+									<a title="Shop Product" href="pages/contactos.html" class="toggle">Contacto</a>
+								</li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</nav><!-- col-md-8 /- -->
+				</div>
+			</div><!-- /.container -->
+		</div><!-- Menu Block /- -->
+	</header><!-- Header Section /- -->
+
+	<!-- Slider Section -->
+	<div id="slider-section" class="slider-section">
+		<div id="make-clean-slider" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			<li data-target="#make-clean-slider" data-slide-to="0" class="active"></li>
+			<li data-target="#make-clean-slider" data-slide-to="1"></li>
+			<li data-target="#make-clean-slider" data-slide-to="2"></li>
+            <li data-target="#make-clean-slider" data-slide-to="3"></li>
+            <li data-target="#make-clean-slider" data-slide-to="4"></li>
+			</ol>
+			
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="images/carrusel/pizzeria1.jpg" alt="slide">
+
+				</div>
+				<div class="item">
+					<img src="images/carrusel/pizzeria2.jpg" alt="slide">
+			    </div>
+                <div class="item">
+					<img src="images/carrusel/pizzeria3.jpg" alt="slide">
+				</div>
+                <div class="item">
+					<img src="images/carrusel/pizeria4.jpg" alt="slide">
+				</div>
+                <div class="item">
+					<img src="images/carrusel/pizzeria5.jpg" alt="slide">
+				</div>
+			</div>
+
+			<!-- Controls -->
+			<a title="Slider Control" class="left carousel-control" href="#make-clean-slider" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a title="Slider Control" class="right carousel-control" href="#make-clean-slider" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	
+	
+	
+	<!-- Industry Serve -->
+	<section id="industry-serve-section" class="industry-serve-section ow-section">
+		<!-- container -->
+		<div class="container">
+			<!-- col-md-6 -->
+			<div class="col-md-6">
+				<!-- Section Header -->
+				<div class="section-header">
+					<h3><img src="images/pizze.svg" alt="sep-icon" /> INDUSTRIES WE SERVE</h3>
+				</div><!-- Section Header /- -->
+				<!-- industry-serve -->
+				<div class="industry-serve">
+					<p>Architecto beatae vitae dicta sunt explicabo. Nemo eni sai th ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit dolores eos qui ratione.</p>
+					<div class="row">
+						<p class="col-md-6 col-sm-6"><img src="images/icon/airline.png" alt="airline" /> Airports & Airlines</p>
+						<p class="col-md-6 col-sm-6"><img src="images/icon/school.png" alt="school" /> Schools & Universities</p>
+						<p class="col-md-6 col-sm-6"><img src="images/icon/auto-mobile.png" alt="auto-mobile" /> Auto Dealerships</p>
+						<p class="col-md-6 col-sm-6"><img src="images/icon/medical.png" alt="medical" /> Medical Facilities</p>
+						<p class="col-md-6 col-sm-6"><img src="images/icon/fitness.png" alt="fitness" /> Sports & Fitness Centers</p>
+						<p class="col-md-6 col-sm-6"><img src="images/icon/entertainment.png" alt="airline" /> Entertainment Venues</p>
+						<a title="View More" href="#">View More</a>
+					</div>
+				</div><!-- industry-serve -->
+			</div><!-- col-md-6 /- -->
+			
+			
+			<!-- col-md-6 -->
+			<div class="col-md-6">
+				<!-- Section Header -->
+				<div class="section-header">
+					<h3><img src="images/pizze.svg" alt="sep-icon" /> WHAT OUR CLIENTS SAY</h3>
+				</div><!-- Section Header /- -->
+					<!-- industry-serve -->
+					<div class="industry-serve">
+						<div id="testimonial" class="carousel slide testimonial" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#testimonial" data-slide-to="0" class="active"></li>
+							<li data-target="#testimonial" data-slide-to="1"></li>
+							<li data-target="#testimonial" data-slide-to="2"></li>
+						</ol>
+						
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="images/testimonial/testimonial-1.png" alt="testimonial" />
+								<div class="carousel-caption">									
+									<p>Victa sunt explicabo. Nemo eni sai th ipsam satai voluptatem quia voluptas sit aspernatur aut odit fugit sed quia consequuntur magni dolores volup tas sit aspernatur aut odit aut fugit.</p>
+									<h3>- ANNA LUSIA <span>FOUNDER OF XYZ COMPANY</span></h3>
+								</div>
+							</div>
+							
+							<div class="item">
+								<img src="images/testimonial/testimonial-1.png" alt="testimonial" />
+								<div class="carousel-caption">									
+									<p>Victa sunt explicabo. Nemo eni sai th ipsam satai voluptatem quia voluptas sit aspernatur aut odit fugit sed quia consequuntur magni dolores volup tas sit aspernatur aut odit aut fugit.</p>
+									<h3>- ANNA LUSIA <span>FOUNDER OF XYZ COMPANY</span></h3>
+								</div>
+							</div>
+							
+							<div class="item">
+								<img src="images/testimonial/testimonial-1.png" alt="testimonial" />
+								<div class="carousel-caption">
+									<p>Victa sunt explicabo. Nemo eni sai th ipsam satai voluptatem quia voluptas sit aspernatur aut odit fugit sed quia consequuntur magni dolores volup tas sit aspernatur aut odit aut fugit.</p>
+									<h3>- ANNA LUSIA <span>FOUNDER OF XYZ COMPANY</span></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div><!-- industry-serve -->
+			</div><!-- col-md-6 /- -->
+		</div><!-- container /- -->
+	</section><!-- Industry Serve /- -->
+	
+	<!-- Statistics Section -->
+	<div id="statistics-section" class="statistics-section ow-background">
+		<!-- container -->
+		<div class="container">
+			<!-- col-md-3 -->
+			<div class="col-md-3 col-sm-3 col-xs-6">
+				<div class="statistics-box">
+					<h3>
+						<img src="images/statistics/satisfied-customer.png" alt="satisfied-customer" />
+						<span class="count" id="statistics_1_count-1" data-statistics_percent="3540"></span>
+					</h3>
+					<img src="images/icon/brush.png" alt="brush" />
+					<h4>satisfied customers</h4>
+				</div>
+			</div><!-- col-md-3 /- -->
+			<!-- col-md-3 -->
+			<div class="col-md-3 col-sm-3 col-xs-6">
+				<div class="statistics-box">
+					<h3>
+						<img src="images/statistics/building.png" alt="building" />
+						<span class="count" id="statistics_1_count-2" data-statistics_percent="1237"></span>
+					</h3>
+					<img src="images/icon/brush.png" alt="brush" />
+					<h4>building cleaned</h4>
+				</div>
+			</div><!-- col-md-3 /- -->
+			<!-- col-md-3 -->
+			<div class="col-md-3 col-sm-3 col-xs-6">
+				<div class="statistics-box">
+					<h3>
+						<img src="images/statistics/clever-employee.png" alt="clever-employee" />
+						<span class="count" id="statistics_1_count-3" data-statistics_percent="2500"></span>
+					</h3>
+					<img src="images/icon/brush.png" alt="brush" />
+					<h4>CLEVER EMPLOYEES</h4>
+				</div>
+			</div><!-- col-md-3 /- -->
+			<!-- col-md-3 -->
+			<div class="col-md-3 col-sm-3 col-xs-6">
+				<div class="statistics-box">
+					<h3>
+						<img src="images/statistics/office.png" alt="office" />
+						<span id="statistics_1_count-4" data-statistics_percent="025"></span>
+					</h3>
+					<img src="images/icon/brush.png" alt="brush" />
+					<h4>OFFICE S WORLD WIDE</h4>
+				</div>
+			</div><!-- col-md-3 /- -->
+		</div><!-- container /- -->
+	</div><!-- Statistics Section /- -->
+	
+	<!-- Blog Section -->
+	<div id="blog-section" class="blog-section ow-section">
+		<!-- container -->
+		<div class="container">
+			<!-- Section Header -->
+			<div class="section-header">
+				<h3><img src="images/icon/sep-icon.png" alt="sep-icon" />LATEST NEWS AND TIPS</h3>
+			</div><!-- Section Header /- -->
+			<!-- col-md-6 -->
+			<article class="col-md-6 col-sm-12">
+				<div class="blog-box">
+					<div class="blog-box-inner">
+						<!-- entry header -->
+						<header class="entry-header">
+							<h3><a title="Blog Title" href="#">12 tips to clean window</a></h3>
+						</header><!-- entry header /- -->
+						
+						<footer class="entry-footer">
+							<span class="byline">
+								<span class="screen-reader-text">BY </span>
+								<a title="Admin" href="#">Admin,</a>
+							</span>
+							<span class="byline">
+								<span class="screen-reader-text">Likes </span>
+								<a title="Likes" href="#">23</a>
+							</span>
+						</footer>
+						
+						<div class="entry-content">
+							<p>Neque porro quisquam est, qui thas dolorem ipsum quia dolor sit amets non numquam[...]</p>
+						</div>
+						<a href="#">Read more</a>
+					</div>
+					<div class="entry-cover pull-right">
+						<a title="Entry Cover" href="#"><img src="images/blog/blog-1.png" alt="blog-1" /></a>
+						<span class="posted-on">
+							<span class="like">12</span>
+							<span class="date">10 APR</span>
+						</span>
+					</div>
+				</div>
+			</article><!-- col-md-6 /- -->
+			
+			<!-- col-md-6 -->
+			<article class="col-md-6 col-sm-12">
+				<div class="blog-box">
+					<div class="blog-box-inner">
+						<!-- entry header -->
+						<header class="entry-header">
+							<h3><a title="Blog Title" href="#">12 tips to clean window</a></h3>
+						</header><!-- entry header /- -->
+						
+						<footer class="entry-footer">
+							<span class="byline">
+								<span class="screen-reader-text">BY </span>
+								<a title="Admin" href="#">Admin,</a>
+							</span>
+							<span class="byline">
+								<span class="screen-reader-text">Likes </span>
+								<a Title="Likes" href="#">23</a>
+							</span>
+						</footer>
+						
+						<div class="entry-content">
+							<p>Neque porro quisquam est, qui thas dolorem ipsum quia dolor sit amets non numquam[...]</p>
+						</div>
+						<a href="#">Read more</a>
+					</div>
+					<div class="entry-cover pull-right">
+						<a title="Blog Cover" href="#"><img src="images/blog/blog-2.png" alt="blog-2" /></a>
+						<span class="posted-on">
+							<span class="like">12</span>
+							<span class="date">10 APR</span>
+						</span>
+					</div>
+				</div>
+			</article><!-- col-md-6 /- -->
+			<a href="#" class="btn">View All</a>
+		</div><!-- container /- -->
+	</div><!-- Blog Section /- -->
+	
+	<!-- call out Section -->
+	<section id="call-out-section" class="call-out-section">
+		<!-- container -->
+		<div class="container">
+			<!-- Section-header -->
+			<div class="section-header">
+				<h3>clean and uniqe psd for your website!</h3>
+			</div><!-- Section-header /- -->
+			<p>Quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores ratione voluptatem
+Neque porro quisquam est, qui dolorem ipsum quia dolor amet.</p>
+			<a title="Button" href="#" class="btn">Buy Now</a>
+			<a title="Button" href="#" class="btn">Contact Us</a>
+		</div><!-- container -->
+	</section><!-- call out section /- -->
+	
+	<!-- Footer Section -->
+	<footer id="footer-section" class="footer-section ow-background">
+		<!-- container -->
+		<div class="container">
+			<div class="footer-heading">
+				<h5>Have any questions or want a free estimate?</h5>
+				<h3>Call Now: +(01) 800 527 4800</h3>
+			</div>
+			<aside class="col-md-3 col-sm-3 widget widget-link">
+				<h3>Clenaing services</h3>
+				<ul>
+					<li><a title="Home Cleaning" href="#"><i class="fa fa-tint"></i> Home Cleaning</a></li>
+					<li><a title="Building Cleaning" href="#"><i class="fa fa-tint"></i> Building Cleaning</a></li>
+					<li><a title="Commercial Cleaning" href="#"><i class="fa fa-tint"></i> Commercial Cleaning</a></li>
+					<li><a title="Vehicle Cleaning" href="#"><i class="fa fa-tint"></i> Vehicle Cleaning</a></li>
+					<li><a title="Maintenance Service" href="#"><i class="fa fa-tint"></i> Maintenance Service</a></li>
+					<li><a title="Pest Controls" href="#"><i class="fa fa-tint"></i> Pest Control</a></li>
+				</ul>
+			</aside>
+			
+			<aside class="col-md-3 col-sm-3 widget widget-link">
+				<h3>help</h3>
+				<ul>
+					<li><a title="Contact Us" href="#"><i class="fa fa-tint"></i> Contact Us</a></li>
+					<li><a title="Special Services" href="#"><i class="fa fa-tint"></i> Special Services</a></li>
+					<li><a title="Advice Tips" href="#"><i class="fa fa-tint"></i> Advice & Tips</a></li>
+					<li><a title="News Video" href="#"><i class="fa fa-tint"></i> News & Video</a></li>
+					<li><a title="Terms Condition" href="#"><i class="fa fa-tint"></i> Terms & Condition</a></li>
+					<li><a title="Site Map" href="#"><i class="fa fa-tint"></i> Site Map</a></li>
+				</ul>
+			</aside>
+			
+			<aside class="col-md-2 col-sm-2 widget widget-link">
+				<h3>page links</h3>
+				<ul>
+					<li><a title="Home" href="#"><i class="fa fa-tint"></i> Home</a></li>
+					<li><a title="About Us" href="#"><i class="fa fa-tint"></i> About Us</a></li>
+					<li><a title="Shop" href="#"><i class="fa fa-tint"></i> Shop</a></li>
+					<li><a title="Our Staffs" href="#"><i class="fa fa-tint"></i> Our Staffs</a></li>
+					<li><a title="Services" href="#"><i class="fa fa-tint"></i> Services</a></li>
+					<li><a title="Latest News" href="#"><i class="fa fa-tint"></i> Latest News</a></li>
+				</ul>
+			</aside>
+			
+			<aside class="col-md-4 col-sm-4 widget widget-calculator">
+				<h3>Price Calculator</h3>
+				<form>
+					<input type="text" name="square-meter" placeholder="SIZE OF AREA  (sQUARE METERS)" required />
+					<select>
+						<option>choose the type of service</option>
+						<option>choose the type of service</option>
+						<option>choose the type of service</option>
+						<option>choose the type of service</option>
+					</select>
+					<input type="submit" value="submit query" />
+				</form> 
+			</aside>
+			
+			<!-- Footer Bottom -->
+			<div class="footer-bottom">
+				<p>Copyright © 2015 Make Clean. All Rights Reserved.</p>
+			</div>
+			<!-- Footer Bottom /- -->
+			
+		</div>
+		<!-- container /- -->
+	</footer><!-- Footer Section /- -->
+
+	<!-- jQuery Include -->
+	<script src="libraries/jquery.min.js"></script>	
+	<script src="libraries/jquery.easing.min.js"></script><!-- Easing Animation Effect -->
+	<script src="libraries/bootstrap/bootstrap.min.js"></script> <!-- Core Bootstrap v3.3.4 -->
+	<script type="text/javascript" src='http://maps.google.com/maps/api/js?sensor=false'></script>
+	<script src="libraries/gmap/jquery.gmap.min.js"></script> <!-- Light Box -->
+	<script src="libraries/fuelux/jquery-ui.min.js"></script> <!-- Price Filter -->
+	<script src="libraries/jquery.animateNumber.min.js"></script> <!-- Used for Animated Numbers -->
+	<script src="libraries/jquery.appear.js"></script> <!-- It Loads jQuery when element is appears -->
+	<script src="libraries/jquery.knob.js"></script> <!-- Used for Loading Circle -->
+	<script src="libraries/wow.min.js"></script> <!-- Use For Animation -->
+	<script src="libraries/owl-carousel/owl.carousel.min.js"></script> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
+	<script src="libraries/portfolio-filter/jquery.quicksand.js"></script> <!-- Portfolio Filter -->
+	<script src="libraries/expanding-search/modernizr.custom.js"></script> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
+	<script src="libraries/flexslider/jquery.flexslider-min.js"></script> <!-- flexslider -->
+	<script src="libraries/jquery.magnific-popup.min.js"></script> <!-- Light Box -->
+	<script src="libraries/expanding-search/modernizr.custom.js"></script> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
+	<script src="libraries/expanding-search/classie.js"></script> 
+	<script src="libraries/expanding-search/uisearch.js"></script>
+	<script>
+		new UISearch( document.getElementById( 'sb-search' ) );
+	</script>
+	<!-- Customized Scripts -->
+	<script src="js/functions.js"></script>
+	
 </body>
 </html>
