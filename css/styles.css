@@ -3,6 +3,10 @@ h1{
     font-size: 50px;
     text-align: center;
 }
+h2{
+  color: black;
+  text-align: center;
+}
 nav{
     background-color: grey;
     text-align: center;
@@ -31,4 +35,32 @@ img {
     flex-wrap: wrap;
     justify-content: flex-start;
     
+}
+img {
+  width: 100%;
+  height: auto; /* mantiene la proporción de aspecto original */
+  object-fit: cover; /* o "contain", "fill", "none", etc. */
+}
+header {
+  background-color: #f2f2f2; /* color de fondo opcional para el encabezado */
+  text-align: center;
+}
+
+.logo-container {
+  display: inline-block;
+  margin: 20px auto; /* ajusta los márgenes superiores e inferiores según sea necesario */
+}
+
+.logo-container img {
+  max-width: 20%; /* ajusta el tamaño máximo del logo */
+}
+.card-container {
+  display: flex;
+  justify-content: space-between; /* Distribuye las tarjetas horizontalmente con espacio entre ellas */
+}
+
+.card {
+  flex-basis: calc(33.33% - 10px); /* Ajusta el ancho de cada tarjeta */
+  /* Añade otros estilos para la apariencia de la tarjeta */
+  border-style: solid;
 }
