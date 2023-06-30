@@ -16,6 +16,9 @@ nav{
     text-align: center;
     word-spacing: 20px;
 }
+body{
+  background: linear-gradient(to right, #242F49, #384358, #ffa586, #B51A2B, #26425A, #E1CBD7, #AE445A, #1D1A39);
+}
 img {
     border: 5px solid white;
     height: 900px;
@@ -46,7 +49,7 @@ img {
   object-fit: cover; /* o "contain", "fill", "none", etc. */
 }
 header {
-  background-color: #f2f2f2; /* color de fondo opcional para el encabezado */
+  background: linear-gradient(to right, #008c45, #ffffff, #d2232c); /* color de fondo opcional para el encabezado */
   text-align: center;
 }
 
@@ -67,6 +70,8 @@ header {
   flex-basis: calc(33.33% - 10px); /* Ajusta el ancho de cada tarjeta */
   /* Añade otros estilos para la apariencia de la tarjeta */
   border-style: solid;
+  background-color: #dfb6b2;
+  border: dotted;
 }
 footer {
   background-color: #6c6c6c;
@@ -114,4 +119,37 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #45a049;
+}
+.menu {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pizza {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #E1CBD7;
+}
+
+.pizza h2 {
+  margin-top: 0;
+}
+
+.pizza p {
+  margin-bottom: 10px;
+}
+
+.pizza img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.map-box {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid #242F49;
+  border-radius: 10px;
+  overflow: hidden;
 }
