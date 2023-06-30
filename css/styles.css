@@ -7,6 +7,10 @@ h2{
   color: black;
   text-align: center;
 }
+p{
+  text-align: justify;
+  margin: 20px;
+}
 nav{
     background-color: grey;
     text-align: center;
@@ -63,4 +67,51 @@ header {
   flex-basis: calc(33.33% - 10px); /* Ajusta el ancho de cada tarjeta */
   /* Añade otros estilos para la apariencia de la tarjeta */
   border-style: solid;
+}
+footer {
+  background-color: #6c6c6c;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.formulario {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #538770;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
 }
