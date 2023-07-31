@@ -17,8 +17,9 @@ nav{
     word-spacing: 20px;
 }
 body{
-  background: linear-gradient(to right, #242F49, #384358, #ffa586, #B51A2B, #26425A, #E1CBD7, #AE445A, #1D1A39);
-}
+    background-image: url(../multimedia/img/back.jpg);
+    background-repeat: repeat;
+  }
 img {
     border: 5px solid white;
     height: 900px;
@@ -183,55 +184,4 @@ footer {
 .span1 {
   max-width: 100%;
   max-height: 100%
-}
-.carousel {
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.carousel-item {
-  float: left;
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-item.active {
-  display: block;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  background-color: #ccc;
-  border-radius: 50%;
-  opacity: .5;
-}
-
-.carousel-control-prev i,
-.carousel-control-next i {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  opacity: 1;
-}
-
-.carousel-control-prev i {
-  transform: rotate(-180deg);
 }
