@@ -1,66 +1,57 @@
-@charset "UTF-8";
-h1 {
-  color: blue;
-  font-size: 50px;
-  text-align: center;
+h1{
+    color:blue;
+    font-size: 50px;
+    text-align: center;
 }
-
-h2 {
+h2{
   color: black;
   text-align: center;
 }
-
-p {
+p{
   text-align: justify-center;
   margin: 20px;
 }
-
-nav {
-  background-color: #d7c879;
-  text-align: center;
-  word-spacing: 20px;
+nav{
+    background-color: #d7c879;
+    text-align: center;
+    word-spacing: 20px;
 }
-
-a {
-  font-size: 20px;
+a{
+    font-size: 20px
 }
-
-body {
-  background-image: url(../multimedia/img/back.jpg);
-  background-repeat: repeat;
-}
-
+body{
+    background-image: url(../multimedia/img/back.jpg);
+    background-repeat: repeat;
+  }
 img {
-  border: 5px solid white;
-  height: 900px;
-  width: 900px;
-}
+    border: 5px solid white;
+    height: 900px;
+    width: 900px;
+  }
+  .box {
+    border: 5px solid darkblue;
+    width: 300px;
+    margin: 10%;
+    padding: 10%; 
 
-.box {
-  border: 5px solid darkblue;
-  width: 300px;
-  margin: 10%;
-  padding: 10%;
+  }
+  .header-nav {
+    overflow: hidden;
+    background-color: #d7c879;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(100, 100, 100, 1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(100, 100, 100, 1);
+    box-shadow: 0px 2px 5px 0px rgba(100, 100, 100, 1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
 }
-
-.header-nav {
-  overflow: hidden;
-  background-color: #d7c879;
-  -webkit-box-shadow: 0px 2px 5px 0px rgb(100, 100, 100);
-  -moz-box-shadow: 0px 2px 5px 0px rgb(100, 100, 100);
-  box-shadow: 0px 2px 5px 0px rgb(100, 100, 100);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
 img {
   width: 100%;
   height: auto; /* mantiene la proporción de aspecto original */
   object-fit: cover; /* o "contain", "fill", "none", etc. */
 }
-
 header {
   background: linear-gradient(to right, #008c45, #ffffff, #d2232c); /* color de fondo opcional para el encabezado */
   text-align: center;
@@ -74,7 +65,6 @@ header {
 .logo-container img {
   max-width: 20%; /* ajusta el tamaño máximo del logo */
 }
-
 .card-container {
   display: flex;
   justify-content: space-between; /* Distribuye las tarjetas horizontalmente con espacio entre ellas */
@@ -87,7 +77,6 @@ header {
   background-color: #dfb6b2;
   border: dotted;
 }
-
 footer {
   background-color: #6c6c6c;
   padding: 20px;
@@ -98,7 +87,6 @@ footer {
   max-width: 800px;
   margin: 0 auto;
 }
-
 .form {
   max-width: 400px;
   margin: 0 auto;
@@ -145,7 +133,6 @@ footer {
 .button:hover {
   background-color: #ff6347;
 }
-
 .menu {
   max-width: 600px;
   margin: 0 auto;
@@ -172,7 +159,6 @@ footer {
   height: auto;
   margin-bottom: 10px;
 }
-
 .map-box {
   max-width: 600px;
   margin: 0 auto;
@@ -180,48 +166,61 @@ footer {
   border-radius: 10px;
   overflow: hidden;
 }
-
 .layout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
 }
 
-.span12 {
+.span12 { 
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100%
 }
-
-.span6 {
+.span6 { 
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100%
 }
-
 .span3 {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100%
 }
-
 .span1 {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100%
 }
 
-.area {
-  text-align: center;
-  font-size: 6.5em;
-  color: #fff;
+
+
+.area{
+  text-align:center;
+  font-size:6.5em;
+  color:#fff;
   letter-spacing: -7px;
-  font-weight: 700;
-  text-transform: uppercase;
-  animation: blur 0.75s ease-out infinite;
-  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+  font-weight:700;
+  text-transform:uppercase;
+  animation:blur .75s ease-out infinite;
+  text-shadow:0px 0px 5px #fff,
+      0px 0px 7px #fff;
 }
 
-@keyframes blur {
-  from {
-    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 50px #7B96B8, 0px 0px 150px #7B96B8, 0px 10px 100px #7B96B8, 0px 10px 100px #7B96B8, 0px 10px 100px #7B96B8, 0px 10px 100px #7B96B8, 0px -10px 100px #7B96B8, 0px -10px 100px #7B96B8;
-  }
+@keyframes blur{
+  from{
+      text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;}
 }
-
-/*# sourceMappingURL=styles.css.map */
