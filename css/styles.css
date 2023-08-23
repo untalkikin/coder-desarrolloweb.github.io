@@ -1,6 +1,6 @@
 @charset "UTF-8";
 h1 {
-  color: blue;
+  color: #3933FF;
   font-size: 50px;
   text-align: center;
 }
@@ -12,7 +12,7 @@ h2 {
 
 p {
   text-align: justify-center;
-  margin: 20px;
+  margin: 100px;
 }
 
 nav {
@@ -81,7 +81,7 @@ header {
 }
 
 .card {
-  flex-basis: calc(33.33% - 10px); /* Ajusta el ancho de cada tarjeta */
+  flex-basis: calc(40.33% - 100px); /* Ajusta el ancho de cada tarjeta */
   /* Añade otros estilos para la apariencia de la tarjeta */
   border-style: solid;
   background-color: #dfb6b2;
@@ -146,13 +146,22 @@ footer {
   background-color: #ff6347;
 }
 
-.menu {
-  max-width: 600px;
-  margin: 0 auto;
+@media (min-width: 1024px) {
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
 }
-
+@media (max-width: 760px) {
+  .menu {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
 .pizza {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 5px;
@@ -162,11 +171,9 @@ footer {
 .pizza h2 {
   margin-top: 0;
 }
-
 .pizza p {
   margin-bottom: 10px;
 }
-
 .pizza img {
   max-width: 100%;
   height: auto;

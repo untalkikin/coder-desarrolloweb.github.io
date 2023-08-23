@@ -11,7 +11,7 @@ h2{
 }
 p{
   text-align: justify-center;
-  margin: 20px;
+  margin: 100px;
 }
 nav{
     background-color: #d7c879;
@@ -73,7 +73,7 @@ header {
 }
 
 .card {
-  flex-basis: calc(33.33% - 10px); /* Ajusta el ancho de cada tarjeta */
+  flex-basis: calc(40.33% - 100px); /* Ajusta el ancho de cada tarjeta */
   /* Añade otros estilos para la apariencia de la tarjeta */
   border-style: solid;
   background-color: #dfb6b2;
@@ -135,13 +135,22 @@ footer {
 .button:hover {
   background-color: #ff6347;
 }
-.menu {
-  max-width: 600px;
-  margin: 0 auto;
+@media(min-width: 1024px){
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
 }
-
+@media(max-width: 760px){
+  .menu {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
 .pizza {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 5px;
