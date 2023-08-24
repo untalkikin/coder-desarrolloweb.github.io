@@ -67,11 +67,18 @@ header {
 .logo-container img {
   max-width: 20%; /* ajusta el tamaño máximo del logo */
 }
-.card-container {
-  display: flex;
-  justify-content: space-between; /* Distribuye las tarjetas horizontalmente con espacio entre ellas */
+@media(min-width: 1024px) {
+  .card-container {
+      display: flex;
+      justify-content: space-between; /* Distribuye las tarjetas horizontalmente con espacio entre ellas */
+  }
 }
-
+@media(max-width: 760px) {
+  .card-container {
+      display: column;
+      justify-content: space-between; /* Distribuye las tarjetas horizontalmente con espacio entre ellas */
+  }
+}
 .card {
   flex-basis: calc(40.33% - 100px); /* Ajusta el ancho de cada tarjeta */
   /* Añade otros estilos para la apariencia de la tarjeta */
