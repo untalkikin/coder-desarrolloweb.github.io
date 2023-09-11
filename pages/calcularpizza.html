@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La mejor pizza del mundo">
+    <meta name="keywords" content="Pizza, pizza, picza">
+    <title>Pizza | Cotiza 🍕</title>
+    <link rel="shortcut icon"  href="./multimedia/img/icons8-pizza-48.png" type="image/x-icon">
+    <!-- Compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../multimedia/img/MagicEraser_230627_181621.PNG" alt="logo">
+        </div>
+        <nav>
+            <a href="../index.html" >Inicio</a>
+            <a href="nosotros.html" >¿Quienes somos?</a>
+            <a href="ubicaciones.html" >Nuestras Ubicaciones</a>
+            <a href="menu.html" >Menu</a>
+            <a href="#" >Contacto</a>
+            <a href="galeria.html" >Galeria</a>
+            <a href="animacion.html">Animacion</a>
+            <a href="#">Cotiza</a>
+            <a href="#infocontact">Informacion Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <form class="form" action="javascript:calcularTotal()">
+            <label for="sabor">Sabor:</label>
+            <select id="sabor">
+              <option value="elegir" selected>Elegir</option>
+              <option value="pepperoni">Pepperoni</option>
+              <option value="hawaiana">Hawaiana</option>
+              <option value="vegetariana">Vegetariana</option>
+              <option value="margherita">Margarita</option>
+              <option value="torino">Torino</option>
+              <option value="superpeperoni">Superpeperoni</option>
+              <option value="espinaca">Espinaca</option>
+            </select>
+            <label for="tamano">Tamaño:</label>
+            <select id="tamano">
+              <option value="elegir" selected>Elegir</option>
+              <option value="personal">Personal</option>
+              <option value="mediana">Mediana</option>
+              <option value="grande">Grande</option>
+            </select>
+            <input type="submit" value="Calcular total">
+          </form>
+          <p class="area" id="total"></p>
+    </main>
+    <footer id="infocontact">
+        <div class="footer-content">
+            <h3>Informacion del contacto</h3>
+            <h2>Direccion:</h2>
+            <h2> Del Hospicio 58BIS, Zona Centro, 99300 Jerez de García Salinas, Zac.</h2>
+            <br>
+            <h2>Telefono:</h2>
+            <p> 494-123-45-67 </p>
+        </div>
+    </footer>
+</body>
+    <!-- Minified JS library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+<script src="../main.js"></script>
+<script>
+    $('.carousel').carousel({
+        interval: 8000,
+        pause:true,
+        wrap:false
+   });
+</script>
+</html>
