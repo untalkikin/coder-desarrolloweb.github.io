@@ -5,30 +5,24 @@ let tamano = document.querySelector("#tamano").value;
 function calcularTotal() {
   // Precios de los sabores
   let preciosSabores = {
-    pepperoni: 0,
-    hawaiana: 0,
-    vegetariana: 0,
-    margheritha: 0,
-    torino: 0,
-    superpeperoni: 0,
-    espinaca: 0
+    pepperoni: 5,
+    hawaiana: 5,
+    vegetariana: 5,
+    margheritha: 5,
+    torino: 5,
+    superpeperoni: 5,
+    espinaca: 5
   };
 
   // Precios de los tamaños
   let preciosTamano = {
-    personal: 50,
-    mediana: 70,
-    grande: 100
+    personal: 45,
+    mediana: 65,
+    grande: 95
   };
 
-  if (preciosSabores != preciosSabores) {
-    // Mostramos un mensaje de error
-    document.querySelector("#total").innerHTML = "Por favor, seleccione un sabor";
-    return;
-  }else{
-    // Calculamos el precio de la pizza
-    let precioPizza = preciosSabores[sabor] + preciosTamano[tamano];
-  }
+  // Calculamos el precio de la pizza
+  let precioPizza = preciosSabores[sabor] + preciosTamano[tamano];
 
   // Mostramos el total
   document.querySelector("#total").innerHTML = "El total es de $" + precioPizza;
