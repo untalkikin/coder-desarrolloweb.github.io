@@ -29,26 +29,23 @@
         </nav>
     </header>
     <main>
+        <h1>Pedido de pizza</h1>
         <form class="form" action="javascript:calcularTotal()">
-            <label for="sabor">Sabor:</label>
-            <select id="sabor">
-                <option value="pepperoni">Pepperoni</option>
-                <option value="hawaiana">Hawaiana</option>
-                <option value="vegetariana">Vegetariana</option>
-                <option value="margherita">Margarita</option>
-                <option value="torino">Torino</option>
-                <option value="superpeperoni">Superpeperoni</option>
-                <option value="espinaca">Espinaca</option>
-            </select>
-            <label for="tamano">Tamaño:</label>
-            <select id="tamano">
-                <option value="personal">Personal</option>
-                <option value="mediana">Mediana</option>
-                <option value="grande">Grande</option>
-            </select>
-            <input type="submit" value="Calcular total">
-          </form>
-          <p class="area" id="total"></p>
+        <label for="sabor">Sabor:</label>
+        <select id="sabor">
+            <option value="pepperoni">Pepperoni</option>
+            <option value="hawaiana">Hawaiana</option>
+            <option value="vegetariana">Vegetariana</option>
+        </select>
+        <label for="tamano">Tamaño:</label>
+        <select id="tamano">
+            <option value="pequeña">Pequeña</option>
+            <option value="mediana">Mediana</option>
+            <option value="grande">Grande</option>
+        </select>
+        <input type="submit" value="Calcular total">
+        </form>
+        <p class="area" id="total"></p>
     </main>
     <footer id="infocontact">
         <div class="footer-content">
@@ -66,11 +63,4 @@
     <!-- Compiled and minified Bootstrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
 <script src="../main.js"></script>
-<script>
-    $('.carousel').carousel({
-        interval: 8000,
-        pause:true,
-        wrap:false
-   });
-</script>
 </html>

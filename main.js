@@ -1,3 +1,4 @@
+// Variables
 let sabor = document.querySelector("#sabor").value;
 let tamano = document.querySelector("#tamano").value;
 
@@ -5,20 +6,16 @@ let tamano = document.querySelector("#tamano").value;
 function calcularTotal() {
   // Precios de los sabores
   let preciosSabores = {
-    pepperoni: 5,
-    hawaiana: 5,
-    vegetariana: 5,
-    margheritha: 5,
-    torino: 5,
-    superpeperoni: 5,
-    espinaca: 5
+    pepperoni: 15,
+    hawaiana: 18,
+    vegetariana: 20
   };
 
   // Precios de los tamaños
   let preciosTamano = {
-    personal: 45,
-    mediana: 65,
-    grande: 95
+    pequeña: 10,
+    mediana: 15,
+    grande: 20
   };
 
   // Calculamos el precio de la pizza
